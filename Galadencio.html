@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Niver de Lulu 🎉</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tangerine:wght@400;700&display=swap');
+    </style>
+
+    <style aria-label="Minhas classes">
+      * {
+        transition: all 300ms ease-out;
+      }
+
+      .gradient {
+        background: #3f5efb;
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        background-size: 300%;
+      }
+
+      body {
+        background: #833ab4;
+        background: -webkit-linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+        background: -moz-linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+        background: linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833AB4", endColorstr="#FCB045", GradientType=1);
+        min-height: 100vh;
+        width: 100vw;
+      }
+
+      .cursorFoto {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        user-select: none;
+        font-size: 34pt !important;
+        z-index: 3 !important;
+      }
+
+      .msg {
+        font-family: "Tangerine", cursive;
+      }
+    </style>
+  </head>
+  <body class="text-white relative">
+    <div class="block absolute inset-0 bg-black/50"></div>
+    <main class="w-full max-w-[800px] inset-0 absolute m-auto p-3">
+      <section class="relative flex max-w-full w-full h-full rounded-lg p-4" id="container">
+
+        <div class="max-w-full w-full absolute select-none pointer-events-none z-10 inset-0 m-auto flex-wrap gap-2 font-bold text-9xl text-center opacity-0 transition-all" id="msg">
+          <p class="msg">Feliz aniversário</p>🤣
+        </div>
+
+        <div class="absolute inset-0 max-w-[200px] m-auto w-full overflow-hidden aspect-square" id="fotoContainer">
+          <div class="w-full h-full overflow-hidden rounded-lg relative" id="divContainer">
+            <span class="block absolute inset-0 gradient z-[2]" id="camadaColorida"></span>
+            <figure class="flex overflow-hidden relative w-full h-full" id="fotoMolde">
+              <img src="/media/imgs/luContainerPrimario.jpeg" class="w-full object-cover" alt="" id="foto" />
+            </figure>
+            <span class="material-symbols-outlined cursorFoto cursor-default select-none text-white" id="icone">touch_app</span>
+          </div>
+
+          
+        </div>
+
+        <footer class="absolute bottom-0 opacity-0">Era pra ser mais bacana, mas, eu sou lerdo.</footer>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
